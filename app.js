@@ -12,6 +12,19 @@ function estaEnElMenu(pedido) {
     return false;
 }
 
-var r = estaEnElMenu("empanada");
+function orden() {
+    if (estaEnElMenu("ceviche")) {
+        return "ceviche";
+    }
+    if (estaEnElMenu("tacos al pastor")) {
+        return "tacos al pastor";
+    }
+    if (estaEnElMenu("empanada chilena")) {
+        return "empanada chilena";
+    }
+    return "hamburguesa";
+}
 
+var r = orden();
 
+var depura = "";
